@@ -3,20 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TavaIzvēle</title>
-    <!-- Подключаем CSS файл -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TavaIzvēle - Modes Veikals</title>
+    <!-- Подключение шрифтов -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Подключение стилей -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Верхняя часть сайта -->
     <header>
-        <h1 class="logo">TavaIzvēle</h1>
+        <div class="logo-container">
+            <h1 class="logo">TavaIzvēle</h1>
+        </div>
+        <nav>
+            <ul class="nav-menu">
+                <li class="nav-item">Jaunumi</li>
+                <li class="nav-item">Sievietēm</li>
+                <li class="nav-item">Vīriešiem</li>
+                <li class="nav-item">Bērniem</li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section class="discounts">
-            <div class="discount-item">
-                <p>Atlaides līdz 50%</p>
+
+    <!-- Герой-секция -->
+    <section class="hero">
+        <h2>Pievienojies modes pasaulei</h2>
+        <p>Atklāj modernus apģērbus, kas veido tavu stilu.</p>
+    </section>
+
+    <!-- Секция товаров -->
+    <section class="products">
+        <h3 class="section-title">Populārās Kategorijas</h3>
+        <div class="product-grid">
+            <div class="product-item">
+                <img src="placeholder1.jpg" alt="Jaunumi">
+                <h4>Jaunumi</h4>
             </div>
-        </section>
-    </main>
+            <div class="product-item">
+                <img src="placeholder2.jpg" alt="Sievietēm">
+                <h4>Sievietēm</h4>
+            </div>
+            <div class="product-item">
+                <img src="placeholder3.jpg" alt="Vīriešiem">
+                <h4>Vīriešiem</h4>
+            </div>
+            <div class="product-item">
+                <img src="placeholder4.jpg" alt="Bērniem">
+                <h4>Bērniem</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция скидок -->
+    <section class="discounts">
+        <h3 class="section-title">Īpašie Piedāvājumi</h3>
+        <div class="discount-grid">
+            <div class="discount-item">
+                <img src="placeholder5.jpg" alt="Atlaides">
+                <p>50% Atlaide visiem džemperiem</p>
+            </div>
+            <div class="discount-item">
+                <img src="placeholder6.jpg" alt="Piegāde">
+                <p>Bezmaksas Piegāde Pasūtījumiem Virs 50€</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2024 TavaIzvēle. Visi Tiesības Aizsargātas.</p>
+        </div>
+    </footer>
 </body>
 </html>
