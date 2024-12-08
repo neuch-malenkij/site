@@ -2,14 +2,14 @@
     font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 400;
-    src: url('./fonts/HKGrotesk-Regular.woff') format('woff');
+    src: url('./fonts/PlayfairDisplay-VariableFont_wght.ttf') format('ttf');
 }
 
 @font-face {
     font-family: 'Playfair Display', serif;
     font-style: normal;
     font-weight: 400;
-    src: url('./fonts/HKGrotesk-Regular.woff') format('woff');
+    src: url('./fonts/PlayfairDisplay-VariableFont_wght.ttf') format('ttf');
 }
 
 * {
