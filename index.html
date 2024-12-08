@@ -1,80 +1,161 @@
 <!DOCTYPE html>
-<html lang="lv">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TavaIzvēle - Modes Veikals</title>
-    <!-- Подключение шрифтов -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <!-- Подключение стилей -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  (function(){
+     emailjs.init({
+       publicKey: "erXdmTgr7HuPouneD",
+     });
+  })();
+</script>
+
+  <!-- Put your site title here -->
+  <title>
+    Portfolio
+  </title>
+
+  <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
-    <!-- Верхняя часть сайта -->
-    <header>
-        <div class="logo-container">
-            <h1 class="logo">TavaIzvēle</h1>
-        </div>
-        <nav>
-            <ul class="nav-menu">
-                <li class="nav-item">Jaunumi</li>
-                <li class="nav-item">Sievietēm</li>
-                <li class="nav-item">Vīriešiem</li>
-                <li class="nav-item">Bērniem</li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- Герой-секция -->
-    <section class="hero">
-        <h2>Pievienojies modes pasaulei</h2>
-        <p>Atklāj modernus apģērbus, kas veido tavu stilu.</p>
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          
+          <li class="nav__item">
+            <a href="#about" class="nav__link">Par mani</a>
+          </li>
+          
+          <li class="nav__item">
+            <a href="#work" class="nav__link">Linki</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Sūtīt ziņu</a>
+          </li>
+
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Name -->
+          <span>Marija Zaiceva</span>
+        </h1>
+        <!-- paragraph -->
+        <p>IZV studente, nodarbojos ar dizainu, programēšanu un lingvistiku. Piedalos Kas? Kur? Kad? sacensībās. </p>
+        <a href="#contact" class="btn btn--pink">Sazināties</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>Darbu piemēri</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Repozitoriji</h3><br>
+              <ul class="work__list">
+              <div class= "work_text">
+                <a href="https://github.com/MarijaZaiceva/Cool-python-stuff.git" target="_blank" class="link__text">
+                  Gradients <span>&rarr;</span>
+                </a>
+              </div> <br>
+              <div class= "work_text">
+                <a href="https://github.com/MarijaZaiceva/MarijaZaiceva.github.io.git" target="_blank" class="link__text">
+                  Portfolio <span>&rarr;</span>
+                </a>
+              </div> 
+                
+              </ul>
+
+            
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
 
-    <!-- Секция товаров -->
-    <section class="products">
-        <h3 class="section-title">Populārās Kategorijas</h3>
-        <div class="product-grid">
-            <div class="product-item">
-                <img src="placeholder1.jpg" alt="Jaunumi">
-                <h4>Jaunumi</h4>
-            </div>
-            <div class="product-item">
-                <img src="placeholder2.jpg" alt="Sievietēm">
-                <h4>Sievietēm</h4>
-            </div>
-            <div class="product-item">
-                <img src="placeholder3.jpg" alt="Vīriešiem">
-                <h4>Vīriešiem</h4>
-            </div>
-            <div class="product-item">
-                <img src="placeholder4.jpg" alt="Bērniem">
-                <h4>Bērniem</h4>
-            </div>
-        </div>
-    </section>
 
-    <!-- Секция скидок -->
-    <section class="discounts">
-        <h3 class="section-title">Īpašie Piedāvājumi</h3>
-        <div class="discount-grid">
-            <div class="discount-item">
-                <img src="placeholder5.jpg" alt="Atlaides">
-                <p>50% Atlaide visiem džemperiem</p>
-            </div>
-            <div class="discount-item">
-                <img src="placeholder6.jpg" alt="Piegāde">
-                <p>Bezmaksas Piegāde Pasūtījumiem Virs 50€</p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Футер -->
-    <footer>
-        <div class="footer-container">
-            <p>&copy; 2024 TavaIzvēle. Visi Tiesības Aizsargātas.</p>
-        </div>
-    </footer>
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Rakstīt ziņu</h2>
+      <div class="contact__info">
+        <p>
+          Šeit Jūs varāt atsūtīt man ziņu.
+        </p>
+
+
+        <form id="contactForm">
+
+          <label for="name">Vārds:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+      
+          <label for="email">E-pasts:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+      
+          <label for="message">Teksts:</label><br>
+          <textarea id="message" name="message" required></textarea><br><br>
+
+          <div class="g-recaptcha" data-sitekey="6LeaZ3EqAAAAALf8D-nzTNXEswgqJ4NsZOutBz2q"></div><br>
+          
+          <input type="button" onclick="sendMail()" class="btn btn--pink" value="Sūtīt">
+          <script src="./contact.js"></script>
+      </form>
+
+
+      <p id="responseMessage" style="color:darkslategrey"></p>
+
+      
+      
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      
+
+      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+      <p>
+        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+      </p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
 </body>
+
 </html>
